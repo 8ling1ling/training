@@ -1,0 +1,71 @@
+<tml onload="init()">
+	<head>
+		<style href="viewWealth.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>        
+		<script src="viewWealth.js"/>
+	</head>
+	<body>
+        <div class="container">
+     	<div class="header hpanel crosscenter ">
+                <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+                </div>
+            </div>
+            <scroller class="w100 ave page_distance">
+                    <label value="智能存款产品名称"class="logo_label1" />
+
+                       <list class="mylist" id="listview" dataSource="{{incomeList}}" refreshBottom="false">
+                          <template>
+                         <div class="flexbox_head6 h_200"  onclick="buyDetails({{item.id}})">
+                         <label value="{{item.name}}"class="logo_label1" />
+                          <label value="{{item.buyNum}}.00(元)" id="" class="logo_label1" />
+                         <label value="持有金额" id="" class="logo_label3" />
+                         </div> 
+                          </template>
+                       </list>
+                <!-- <div class="flexbox_head6 h_200"  onclick="buyDetails()">
+                     <label value="{{productName}}"class="logo_label1" />
+                     <label value="{{buyNum}}.00(元)" id="" class="logo_label1" />
+                     <label value="持有金额" id="" class="logo_label3" />
+                </div> -->
+                  <div class="emptybox222" > 
+                   <label value="定期存款产品" class="label_5"/>
+                    <label value="总额:{{buyNum}}.00(元)" class="label_5"/>
+                  </div>
+
+
+               <!-- <div class="flexbox_head6 h_1501"  onclick="buyDetails()"> -->
+                     <!-- <label value="定期整存整取产品"class="logo_label1" />
+                       <div class="emptybox221" > 
+                   <label value="1,000.00" class="labe_1"/>
+                    <label value="1.05%" class="label_1"/>
+                  </div>
+                     <div class="emptybox220" > 
+                   <label value="持有金额(元)" class="label_5"/>
+                    <label value="收益率" class="label_5"/>
+                  </div> -->
+                <!-- </div> -->
+
+
+                 <!-- <div class="flexbox_head6 h_1501"  onclick="buyDetails()"> -->
+                 <div class="flexbox_head6 h_1501" >
+                     <label value="定期整存整取产品"class="logo_label1" />
+                       <div class="emptybox221" > 
+                   <label value="12，123.00" class="labe_1"/>
+                    <label value="4.56%" class="label_1"/>
+                  </div>
+                     <div class="emptybox220" > 
+                   <label value="持有金额(元)" class="label_5"/>
+                    <label value="收益率" class="label_5"/>
+                  </div>
+                </div>
+
+                <button onclick ="back_index()"  value="返回主页" class="button11"/>
+            </scroller>
+
+		</div>
+	</body>
+</tml>

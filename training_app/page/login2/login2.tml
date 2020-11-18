@@ -1,0 +1,45 @@
+<tml>
+	<head>
+		<style href="login2.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>
+		<script src="login2.js"/>
+	</head>
+	<body>   
+        <div class="container">
+			<div class="header hpanel crosscenter ">
+                <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+                </div>
+                <label value="登录" id="id_title" class="title_white" />
+                <label value=""  class="tit_right" />
+            </div>
+            <scroller class="w100 ave page_distance">
+             <div  class="mgT_80">
+                </div>
+                <div id="" class="emptybox h_150">
+                    <label value="银行logo" id="" class="" />
+                </div>
+                <div  class="mgT_80">
+                </div>
+                <div id="" class="flexbox">
+                    <label value="手机号：" id="" class="baselabel" />
+                    <input value="{{phone2}}" id="" class="baseinput w70" tip="请输入手机号"/>
+                </div> 
+                <div  class="mgT_25">
+                </div>
+                <div id="" class="flexbox">
+                    <label value="密码" id="" class="baselabel" />
+                    <input value="{{password2}}" id="" class="baseinput w40" tip="请输入密码"/>
+                </div>
+                <button value="换一种方式登录" id="" class="login_button2 " onclick="login2()" />
+
+                <button value="登录" id="" class="login_button w100 mgT_40" onclick="testRequest()" />
+                
+            </scroller>
+            
+		</div>
+	</body>
+</tml>

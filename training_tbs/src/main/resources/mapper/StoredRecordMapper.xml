@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.sunline.tiny.demo.mapper.StoredRecordMapper">
+<!--selectById,deleteById,updateById,insert is auto create, <resultMap id="BaseResultMap" is auto create -->
+    <insert id="insertRecord" parameterType="StoredRecord">
+   insert  into
+    stored_record
+    (u_id,store_money,store_time,time)
+     values
+   (#{uId},#{storeMoney},#{storeTime},#{time});
+    </insert>
+    <select id="getRecord" resultType="String">
+        select store_money from stored_record where u_id=#{id}
+    </select>
+</mapper>

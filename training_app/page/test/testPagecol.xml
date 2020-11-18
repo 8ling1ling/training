@@ -1,0 +1,8 @@
+<paths>
+    <forward>
+        <path ty:if="DATA.nextPage === 'productDetail'" url="page/productDetail/productDetail.tml" class="push" />
+    </forward>
+    <backward>
+        <path ty:if="true" class="pop"/>
+    </backward>
+</paths>

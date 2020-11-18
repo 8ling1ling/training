@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cn.sunline.tiny:cn.sunline.tiny.parse:2.1.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/sunline/tiny/cn.sunline.tiny.parse/2.1.3-SNAPSHOT/cn.sunline.tiny.parse-2.1.3-20191028.141511-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/sunline/tiny/cn.sunline.tiny.parse/2.1.3-SNAPSHOT/cn.sunline.tiny.parse-2.1.3-20191028.141511-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/sunline/tiny/cn.sunline.tiny.parse/2.1.3-SNAPSHOT/cn.sunline.tiny.parse-2.1.3-20191028.141511-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

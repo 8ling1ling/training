@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.sunline.tiny.demo.mapper.ProductInformationMapper">
+<!--selectById,deleteById,updateById,insert is auto create, <resultMap id="BaseResultMap" is auto create -->
+
+    <select id="selectProductInformations" resultType="map">
+          select
+          *
+          from
+          product_information
+    </select>
+
+    <select id="getProName" resultMap="BaseResultMap">
+        select product_name from product_information where id= #{productId}
+    </select>
+
+      <select id="selectByUid" resultMap="BaseResultMap">
+          select
+          *
+          from
+          product_information
+          where id=#{productId}
+      </select>
+
+</mapper>

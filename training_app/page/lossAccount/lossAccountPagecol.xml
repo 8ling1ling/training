@@ -1,0 +1,10 @@
+<paths>
+    <forward>
+        <path ty:if="DATA.nextPage === 'buyProduct'" url="page/buyProduct/buyProduct.tml" class="push" />
+        <path ty:if="DATA.nextPage === 'gesture'" url="page/gesture/gesture.tml" class="push" />
+        <path ty:if="DATA.nextPage === 'lossResult'" url="page/lossResult/lossResult.tml" class="push" />
+    </forward>
+    <backward>
+        <path ty:if="true" class="pop"/>
+    </backward>
+</paths>

@@ -1,0 +1,397 @@
+
+
+.flexbox_head{
+    width: 100%;
+    border: 1 solid #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.flexbox_head1{
+    width: 100%;
+    margin: 1 solid #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.flexbox_head2{
+    width: 100%;
+    margin: 15 solid #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30;
+
+}
+
+.flexbox_head6{
+    width: 100%;
+    margin: 30 0 20 0;
+    border: 1 solid #000000;
+    padding: 0  30 0  0;
+    flex-direction: column;
+    align-items: center;
+    height: 30;
+
+}
+
+.flexbox_head7{
+    width: 100%;
+    margin: 2 0 0 0;
+    /* border: 1 solid #000000; */
+    /* padding: 20 20 20  20; */
+    flex-direction: column;
+    align-items: center;
+    height: 120;
+
+}
+
+.flexbox_head8{
+    /* width: 50%; */
+    margin: 2 0 0 0;
+    border: 1 solid black;
+    /* padding: 20 20 20  20; */
+    /* flex-direction: row; */
+    /* align-items: column; */
+    /* height:100; */
+
+}
+
+.flexbox_head9{
+    width: 100%;
+    margin: 30 0 0 0;
+    border: 1 solid #000000;
+    /* padding: 20 20 20  20; */
+    flex-direction: column;
+    height: 100;
+
+}
+.doder2{
+    border: 20 20 20 20;
+}
+
+.rowline{
+    border:1 solid #000000;
+
+    /* padding: 20 20 20  20;   */
+    /* width: 280; */
+    flex-direction: column;
+    
+}
+
+.rowline1{
+    width: 280;
+    border:1 solid #000000;
+    padding: 0 20 0 20;  
+}
+
+.flexbox_row{
+    width: 100%;
+    border: 1 solid #000000;
+    flex-direction: row;
+
+}
+.flexbox{
+    border: 1 solid #000000;
+    margin: 40 0 0 0;
+    width: 100%;
+    height: 60;
+    flex-direction: row;
+}
+.flexbox2{
+    border: 1 solid #000000;
+    margin: 40 0 0 0;
+    width: 100%;
+    height: 60;
+    flex-direction: column;
+}
+
+.flexbox21{
+    border: 1 solid #000000;
+    margin: 10 0 0 0;
+    width: 100%;
+    height: 60;
+    flex-direction: column;
+}
+.flexbox22{
+    font-size: 20;
+    height: 35;
+    margin: 0 0 0 20;
+    /* border: 1 solid #000000;
+    margin: 40 0 0 0;
+    width: 100%;
+    height: 60;
+    flex-direction: column; */
+}
+
+.flexbox11{
+    border: 1 solid #e70101;
+    margin: 0 20 0 0;
+    width: 190;
+    height: 58;
+    align-items: flex-end;
+    font-size: 16;
+    background-color:#fafafa;
+
+    /* flex-direction: row; */
+}
+
+
+
+.flexbox1{
+    border: 1 solid #000000;
+    margin: 5 0 0 0;
+    width: 100%;
+    height: 60;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexbox_head3{
+    width: 100%;
+    border: 1 solid #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30;
+
+}
+
+.flexbox_head4{
+    width: 100%;
+    border: 1 solid #000000;
+    /* flex-direction:row; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    height: 160;
+    flex-direction:column
+
+}
+
+.flexbox_head5{
+    width: 100%;
+    border: 1 solid #000000;
+    padding: 0 10;
+    margin: 10 0 10 0;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-around; 
+
+}
+
+.flexbox_head5{
+
+    width: 100%;
+    border: 1 solid #000000;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    height: 160;
+    
+}
+
+.circle{
+  border-radius: 25;
+
+  width: 50;
+  height: 50;
+  border: 1 solid #000000;
+  /* background-color: rgb(167, 90, 90); */
+}
+
+
+.flex_circle{
+    width: 50;
+    text-align: center;
+    border: 1 solid #000000;
+    margin: 0 16 0 0;
+    font-size: 12;
+
+
+}
+
+.logo_label{
+    border: 1 solid #000000;
+    height: 50;
+    width: 180;
+    text-align: center;
+}
+
+
+
+.logo_label1{
+    width: 100%;
+    text-align: center;
+    margin: 10 0 0 0;
+    font-size: 19;
+    font-style:bold;
+}
+
+.logo_label2{
+    width: 100%;
+    text-align: center;
+    margin: 5 0 5 0;
+    font-size: 19;
+    font-style:bold;
+}
+.logo_label3{
+    width: 100%;
+    text-align: center;
+    margin: 5 0 5 0;
+    font-size: 19;
+    font-style:bold;
+}
+.logo_label4{
+    width: 180;
+    margin: 5 0 0 0;
+    text-align: left;
+    font-size: 19;
+    font-style:bold;
+}
+.logo_label5{
+    width: 180;
+    margin: 5 0 15 0;
+    text-align: left;
+    font-size: 17;
+    color: rgb(85, 85, 85);
+}
+.logo_label6{
+    width: 250;
+    margin: 0 0 0 0;
+    text-align: left;
+    font-size: 17;
+    color: rgb(85, 85, 85);
+    
+}
+.logo_label7{
+    width: 100%;
+    margin: 5 0 0 0;
+    text-align: left;
+    font-size: 16;
+    color: rgb(85, 85, 85);
+    max-lines: 30;
+    
+}
+.logo_label8{
+    width: 100%;
+    margin: 5 0 15 0;
+    text-align: right;
+    font-size: 16;
+    color: rgb(0, 0, 0);
+    font-style:bold;
+}
+.logo_label9{
+    width: 100%;
+    margin: 5 0 15 0;
+    text-align: left;
+    font-size: 16;
+    color: rgb(0, 0, 0);
+}
+.login_btn{
+    border: 1 solid #000000;
+    height: 40;
+    width: 150;
+    text-align: center;
+}
+.template{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    height: 50;
+    border: 1 solid white;
+    flex-direction: row;
+    justify-content: space-between;
+     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.top1{
+    height: 25;
+    border: 1 solid white;
+    flex-direction: row;
+    justify-content: space-between;
+     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.label_1{
+    text-align: center;
+    border: 5 solid white;
+    color: #000000;
+    font-size: 15;
+    font-style: bold;
+}
+.label_2{
+    text-align: center;
+    border: 5 solid white;
+    color: #5a4141;
+    font-size: 15;
+}
+.label_3{
+    text-align: center;
+    border: 5 solid white;
+    color: #ff0b34;
+    font-size: 19;
+}
+
+.label_4{
+    text-align: center;
+    border: 5 solid white;
+    color: #000000;
+    font-size: 15;
+    font-style: bold;
+}
+.button_class{
+    color: black;
+    font-size:19;
+    text-align:center;
+    border-width: 2 2 2 2;
+}
+
+.baselabel{
+    font-size: 16;
+    font-style:bold;
+    text-align: center;
+}
+
+.baselabel2{
+    font-size: 16;
+    text-align: center;
+}
+.baselabel21{
+    font-size: 17;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+.baselabel22{
+    text-align: left;
+    font-size: 19;
+    text-align: left;
+    font-style: bold;
+}
+.baselabel23{
+    font-size: 16;
+    text-align: right;
+    margin: 0 20 0 0;
+
+}
+.baselabe1l{
+    font-size: 16;
+}
+.button11{
+    margin: 150 0 0 0;
+    font-size:16;
+    color:#fafafa;
+    text-align:center;
+    border: 1 solid #000000;
+    height: 50;
+    background-color: #025bff;
+}
+

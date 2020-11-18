@@ -1,0 +1,164 @@
+<tml onload="init()">
+	<head>
+		<style href="index.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>        
+		<script src="index.js"/>
+	</head>
+	<body>
+        <div class="container">
+        <div class="header1 hpanel crosscenter ">
+        <label value="主页"  class="tit_right5" />
+        </div>
+            <scroller class="w100 ave page_distance">
+                <div id="" class="top1 {{value}}">
+               
+                     <label value="{{pubData}}用户，欢迎登录"  class="tit_righ " />
+                </div>
+                <div  class="flexbox_head1 h_1501">
+                    <label value="logo" id="" class="logo_label" />
+                    <label value="广告语" id="" class="label_21" />
+                    
+                    <button value="登录" id="" class="login_btn {{abc}}" onclick="gotoLogin()" />
+                </div>
+
+               <div  class="flexbox_head4 h_1501">
+
+               <div class="flexbox_row h_75 ">
+
+                  <div class="flex_circle" onclick="viewWealth()"> 
+                <div class="circle"> 
+                </div> 
+                <div> 
+                <label value="支取" class="flex_circle" /> 
+                </div>
+                </div>
+                 <div class="flex_circle" onclick="productRecommendation()"> 
+                <div class="circle"> 
+                </div> 
+                <div > 
+                <label value="理财" class="flex_circle" /> 
+                </div>
+                </div> 
+                  <div class="flex_circle" onclick="CashInBank()"> 
+                <div class="circle"> 
+                </div> 
+                <div> 
+                <label value="存款" class="flex_circle" /> 
+                </div>
+                </div>
+
+                 <div class="flex_circle"> 
+                <div class="circle" onclick="moneyRecord()"> 
+                </div> 
+                <div> 
+                <label value="支取记录" class="flex_circle" /> 
+                </div>
+                </div> 
+
+                 <div class="flex_circle" onclick="viewWealth()"> 
+                <div class="circle"> 
+                </div> 
+                <div> 
+                <label value="账户总览" class="flex_circle" /> 
+                </div>
+                </div> 
+
+               </div>
+
+
+               <!-- 11111111111111111 -->
+                          <div class="flexbox_row h_75 ">
+
+                  <div class="flex_circle"> 
+                <div class="circle"> 
+                </div> 
+                <div> 
+                <label value="扫一扫" class="flex_circle" /> 
+                </div>
+                </div>
+
+
+                 <div class="flex_circle"> 
+                <div class="circle"> 
+                </div> 
+                <div> 
+                <label value="收款码" class="flex_circle" /> 
+                </div>
+                </div> 
+
+                  <div class="flex_circle"> 
+                <div class="circle"> 
+                </div> 
+                <div> 
+                <label value="帮助中心" class="flex_circle" /> 
+                </div>
+                </div>
+
+
+                 <div class="flex_circle"> 
+                <div class="circle"> 
+                </div> 
+                <div> 
+                <label value="反馈中心" class="flex_circle" /> 
+                </div>
+                </div> 
+
+
+
+                 <div class="flex_circle"> 
+                <div class="circle"> 
+                </div> 
+                <div> 
+                <label value="全部" class="flex_circle" /> 
+                </div>
+                </div> 
+
+
+
+               </div>       
+               <!-- 222222222222 -->
+               
+
+               </div>
+
+
+                 <Paging id="Paging" dataSource="{{list}}" currentPage="3" flipInterval="1500" >
+	                <template class="template" type="cell1">
+                                <!-- <label class="layout1 cellcolor0_1" value="{{item.data.item.value}}" /> -->
+                                <label class="layout1 cellcolor0_1" value="{{item.value}}" />
+                   </template>
+                  </Paging>
+                   <div  class="flexbox_head2 ">
+                    <div  class="flexbox_head3 ">
+                      <label value="银行公告 公告内容标题xxxxxxxxxxxxx"/>
+               </div>
+               </div>
+               <div  class="flexbox_head5 ">
+                     <div  class="flexbox " onclick="productDetails()">
+                      <label value="定期存款" class="label_1"/>
+                      <label value="本行特色" class="label_2"/>
+                      <label value="4.26%" class="label_3"/>
+                      <label value="预计年化" class="label_4"/>
+                      </div>
+                      <div  class="flexbox " onclick="productDetails()">
+                       <label value="银行理财" class="label_1"/>
+                      <label value="本行产品" class="label_2"/>
+                      <label value="4.10%" class="label_3"/>
+                      <label value="预计年化" class="label_4"/>
+                      </div>
+                      <div  class="flexbox " onclick="productDetails()">
+                       <label value="精选好基金" class="label_1"/>
+                      <label value="南方品..." class="label_2"/>
+                      <label value="58.29%" class="label_3"/>
+                      <label value="近一年收益化" class="label_4"/>
+                      </div>
+               </div>
+              
+            </scroller>
+            
+		</div>
+	</body>
+</tml>

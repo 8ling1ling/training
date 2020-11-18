@@ -1,0 +1,103 @@
+{
+    "common": {
+        "width": "300",
+        "height": "48",
+        "background-color": "#1e90fb",
+        "highlighted-color": "#ff0000",
+        "font-size": "14",
+        "font-color": "#ffffff"
+    },
+    "type": {
+        "loadingButton": {
+            "loading-image": "../image/loading/Loading.png",
+            "loading-size": "30",
+            "loading-padding": "20",
+            "loading-position": "right"
+        },
+        "button1": {
+            "width": "300",
+            "border-radius": "7",
+            "margin": "57 57 20 57"
+        },
+        "button11": {
+            "width": "300",
+            "border-radius": "10",
+            "align":"center",
+            "font-color":"#000000",
+            "background-color":"white"
+        },
+        "button2": {
+            "width": "100%",
+            "margin": "10 0 0 0"
+        },
+        "button3": {
+            "width": "300",
+            "border-radius": "7",
+            "margin": "19 57 0 57"
+        },
+        "button4": {
+            "width": "300",
+            "border-radius": "24",
+            "background-color": "#ffffff",
+            "margin": "13 57 0 57",
+            "border": "1 solid #1e90fb",
+            "font-color": "#1e90fb",
+            "aureole-start-color": "#21CAFF",
+            "aureole-end-color": "#6342E1",
+            "aureole-width": "5"
+        },
+        "button5": {
+            "width": "153",
+            "border-radius": "7",
+            "margin": "54 0 20 40"
+        },
+        "button6": {
+            "width": "153",
+            "border-radius": "7",
+            "background-color": "#fbaf1e",
+            "margin": "54 40 20 25"
+        },
+        "button7": {
+            "width": "248",
+            "height": "46",
+            "border-radius": "23",
+            "margin": "10 88 10 88"
+        },
+        "button8": {
+            "width": "248",
+            "height": "46",
+            "border-radius": "23",
+            "background-gradient": "left_top right_bottom #1ecafb #1e90fb",
+            "margin": "10 88 10 88"
+        },
+        "button9": {
+            "width": "248",
+            "height": "46",
+            "border-radius": "23",
+            "border": "4 solid #661e90fb",
+            "margin": "10 88 10 88"
+        },
+        "asdasdas": {
+            "width": "400", //view宽
+            "height": "300", //view高
+            "border-radius": "10", //圆角
+            "background-color": "#00ff00", //背景色
+            "highlighted-color": "#ff0000", //高亮背景色及按压颜色
+            "disable-color": "#0000ff", //不可点击背景色
+            "font-size": "20", //文字大小
+            "font-color": "#aaff00", //文字颜色
+            "font-highlighted-color": "#000000", //文字高亮颜色
+            "font-disable-color": "#770350", //文字不可点击颜色
+            "font-gradient": "left right #dd5c87 #0e67ec", //文字渐变色
+            "padding": "10 10 10 10", //内边距
+            "margin": "0 10 0 10", //外边距
+            "background-shadow": "0 0 10 #7f7f00", //阴影
+            "border": "2 solid #000000", //边框
+            "rippleColor": "#798798", //水波纹颜色
+            "rippleRadius": "5", //水波纹弧度
+            "background-position": "center", //图片显示位置
+            "background-gradient": "left right #dd5c87 #0e67ec", //背景渐变色
+            "background-image": "url(../../image/1.jpg)" //按钮背景图片
+        }
+    }
+}

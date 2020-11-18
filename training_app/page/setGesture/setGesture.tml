@@ -1,0 +1,29 @@
+
+<tml onload="init()">
+	<head>
+		<style href="setGesture.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>        
+		<script src="setGesture.js"/>
+	</head>
+	<body>   
+        <div class="container">
+			<div class="header hpanel crosscenter ">
+                <div id="back" class="backBox hpanel crosscenter"   >
+                    <!-- <img class="back" src="../../image/public/back.png" /> -->
+                </div>
+                <!-- <label value="设置软件打开手势" id="id_title" class="title_white" /> -->
+                <button value="跳过" class="backBox2" onclick="skip()" />
+            </div>
+            <scroller class="w100 ave page_distance">
+                <div id="" class="gestureBox">
+                    <GestureLock topTip = "" bottomTip = "设置您的手势密码" id="GestureLock" type="type2"/>
+                </div>
+
+            </scroller>
+            
+		</div>
+	</body>
+</tml>

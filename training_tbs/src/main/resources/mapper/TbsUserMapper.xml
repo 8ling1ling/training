@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.sunline.tiny.demo.mapper.TbsUserMapper">
+<!--selectById,deleteById,updateById,insert is auto create, <resultMap id="BaseResultMap" is auto create -->
+
+    <select id="selectByPhone" resultMap="BaseResultMap">
+    select
+     u_name,login_password
+     from
+      tbs_user
+       where
+       u_phone = #{phone}
+  </select>
+
+    <update id="setLastLoginTime">
+      update
+       tbs_user
+       set
+        login_date =#{lastLoginTime}
+        where
+         u_phone=#{phone}
+  </update>
+
+    <select id="judgePhone" resultType="int">
+       select
+       count(u_phone)
+       from
+        tbs_user
+        where
+         u_phone=#{phone}
+    </select>
+
+    <insert id="insertUser">
+        insert into
+         tbs_user
+         (u_name,
+         login_password,
+         u_phone,
+         id_identity,
+         car_number,
+         registration_date,
+         login_date )
+         value
+         (#{uName},
+          #{loginPassword},
+          #{uPhone},
+          #{idIdentity},
+          #{carNumber},
+          #{registrationDate},
+          #{loginDate})
+    </insert>
+
+
+    <select id="selectInfoByPhone" resultMap="BaseResultMap">
+    select
+     *
+     from
+      tbs_user
+       where
+       u_phone = #{phone}
+  </select>
+
+    <update id="setGesture">
+       update
+         tbs_user
+				 set
+				 setGesture=#{setGesture}
+          where
+           u_phone=#{phone}
+    </update>
+
+    <update id="updataState">
+       update
+         tbs_user
+				 set
+				 user_state=#{i}
+          where
+           u_phone=#{phone}
+    </update>
+
+
+</mapper>

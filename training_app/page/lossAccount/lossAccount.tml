@@ -1,0 +1,34 @@
+<tml onload="init()">
+	<head>
+		<style href="lossAccount.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>        
+		<script src="lossAccount.js"/>
+	</head>
+	<body>
+        <div class="container">
+        <div class="header3 hpanel crosscenter ">
+         <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+                </div>
+                      <label value="           账户挂失"  class="tit_right4" />
+               </div>
+                  <div class="rowline"></div>
+
+            <scroller class="w100 ave page_distance">
+
+               <div  class="flexbox_head5 h_1501">
+               <label value="***************{{cardId}}"class="logo_label4" />
+               <label value="余额:"class="logo_label4" />
+                <label value="{{cardMoney}}"class="logo_label4" />
+               </div>
+               <label value="Tips:挂失账户操作将同时将对所有列出的账号进行挂失。"class="logo_label41" />
+                 <!-- <button onclick ="buyProduct()"  value="立即签约" type = "button11" disable= "true"/> -->
+                  <button value="确定挂失" id="" class="login_button111 w100 mgT_80" onclick="lossResult()" />
+            </scroller>
+
+		</div>
+	</body>
+</tml>

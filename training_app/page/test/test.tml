@@ -1,0 +1,75 @@
+<tml>
+	<head>
+		<style href="deposit.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>
+        
+		<script src="deposit.js"/>
+	</head>
+	<body>   
+        <div class="container">
+			<div class="header hpanel crosscenter mg_0">
+                <div id="back" class="backBox hpanel crosscenter" >
+                    <!-- <img class="back" src="../../image/public/back.png" /> -->
+                </div>
+                <label value="存款" id="id_title" class="title_white" />
+                <label value=""  class="tit_right" />
+            </div>
+            <scroller class="w100 ave page_distance">
+                <div  class="emptybox h_150 mgT_20">
+                    <label value="广告位" class="" />
+                </div>
+                <label value="智能推荐产品"  class="labal_title" />
+               
+                 <list class="currentList" id="currentList" dataSource="{{currentList}}" refreshBottom="false" refreshTop="false">
+					<template>
+						<div  class="flex_box">
+                            <div  class="w30 flex_colum border_right">
+                                <label value="{{item.interestRate12}}%"  class="rate_label" />
+                                <label value="预期收益"  class="rate_text_label" />
+                            </div>
+                            <div  class="w70 flex_colum pdL_10">
+                                <label value="{{item.name}}"  class="product_name" />
+                                <label value="{{item.resume}}"  class="product_brief" />
+                                <button value="了解更多>>"  class="more_btn" onclick="gotoProductDetail({{item.id}})"  />                        
+                            </div>
+                        </div>
+					</template>
+				</list>
+                <label value="定期存款产品"  class="labal_title" />
+
+                <list class="regularList" id="regularList" dataSource="{{regularList}}" refreshBottom="false" refreshTop="false">
+					<template>
+						<div  class="flex_box">
+                            <div  class="w30 flex_colum border_right">
+                                <label value="{{item.interestRate12}}%"  class="rate_label" />
+                                <label value="预期收益"  class="rate_text_label" />
+                            </div>
+                            <div  class="w70 flex_colum pdL_10">
+                                <label value="{{item.name}}"  class="product_name" />
+                                <label value="{{item.resume}}"  class="product_brief" />
+                                <button value="了解更多>>"  class="more_btn" onclick="gotoProductDetail({{item.id}})"  />                        
+                            </div>
+                        </div>
+					</template>
+				</list>
+                <!-- <div  class="flex_box">
+                    <div  class="w30 flex_colum border_right">
+                        <label value="3.30%"  class="rate_label" />
+                        <label value="预期收益"  class="rate_text_label" />
+                    </div>
+                    <div  class="w70 flex_colum pdL_10">
+                        <label value="智能存款产品"  class="product_name" />
+                        <label value="随存随取收益可高达3%"  class="product_brief" />
+                        <button value="了解更多>>"  class="more_btn" onclick="gotoProductDetail()"  />                        
+                    </div>
+                </div> -->
+                
+                
+            </scroller>
+            
+		</div>
+	</body>
+</tml>

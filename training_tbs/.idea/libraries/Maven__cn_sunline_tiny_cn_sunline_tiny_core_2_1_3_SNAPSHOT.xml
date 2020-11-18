@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cn.sunline.tiny:cn.sunline.tiny.core:2.1.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/sunline/tiny/cn.sunline.tiny.core/2.1.3-SNAPSHOT/cn.sunline.tiny.core-2.1.3-20190904.093939-5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/sunline/tiny/cn.sunline.tiny.core/2.1.3-SNAPSHOT/cn.sunline.tiny.core-2.1.3-20190904.093939-5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/sunline/tiny/cn.sunline.tiny.core/2.1.3-SNAPSHOT/cn.sunline.tiny.core-2.1.3-20190904.093939-5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

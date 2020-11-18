@@ -1,0 +1,10 @@
+.gestureBox{
+    width: 100%;
+    align-items: center;
+    margin: 60 0 0 0;
+}
+.forgetBox{
+    text-align: center;
+    color: #2387ff;
+    align-items: center;
+}

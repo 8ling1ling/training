@@ -1,0 +1,44 @@
+<tml onload="init()">
+	<head>
+		<style href="personalCenter.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>        
+		<script src="personalCenter.js"/>
+	</head>
+	<body>
+        <div class="container">
+        <div class="header3 hpanel crosscenter ">
+         <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+                </div>
+                      <label value="           个人中心"  class="tit_right4" />
+               </div>
+                  <div class="rowline"></div>
+                   <label value="账户总览" class="baselabel1" />
+             <scroller class="w100 ave page_distance">
+               <div id="" class="flexbox123">
+                    <label value="卡号：      " class="baselabel" />
+                    <input value="               ********* {{kahao}}" id="" class="baselabel" tip=""/>
+
+                    <label value="总资产：   " class="baselabel" />
+                    <label value="                         ￥{{zongzicgan}}.00元 " class="baselabel" />
+                    
+                    <label value="可支配余额:" class="baselabel" />
+                    <input value="                          ￥{{kezhipei}}.00元" id="" class="baselabel" tip=""/>
+                </div> 
+                 <div class="flexbox1">
+                    <!-- <label value="购买记录" class="baselabel" /> -->
+                </div>
+                 <div class="flexbox1">
+                    <!-- <label value="支取记录" class="baselabel" /> -->
+                </div> 
+                 <div class="flexbox231" onclick="SMSverification()">
+                    <label value="账号挂失" class="baselabel" />
+                </div>
+                 <button onclick =""  value="退出" class="button11" onclick="backward()" />
+            </scroller>
+		</div>
+	</body>
+</tml>

@@ -1,0 +1,47 @@
+<frame>
+    <navigator id="nav">
+        <!-- <page url="login/login.tml"/> -->
+        <!-- <page url="registered/registered.tml"/> -->
+        <!-- <page url="index/index.tml"/> -->
+        <!-- <page url="productRecommendation/productRecommendation.tml"/> -->
+        <!-- <page url="productDetails/productDetails.tml"/> -->
+        <!-- <page url="SMSverification/SMSverification.tml"/> -->
+        <!-- <page url="CashInBank/CashInBank.tml"/> -->
+        <!-- <page url="buyProduct/buyProduct.tml"/> -->
+        <!-- <page url="buySucceeded/buySucceeded.tml"/> -->
+        <!-- <page url="viewWealth/viewWealth.tml"/> -->
+        <!-- <page url="buyDetails/buyDetails.tml"/> -->
+        <!-- <page url="drawMoney/drawMoney.tml"/> -->
+        <!-- <page url="personalCenter/personalCenter.tml"/> -->
+        <!-- <page url="gesture/gesture.tml"/> -->
+        <!-- <page url="lossAccount/lossAccount.tml"/> -->
+        <!-- <page url="lossResult/lossResult.tml"/> -->
+        <!-- <page url="setGesture/setGesture.tml"/> -->
+        <!-- <page url="inputPassword/inputPassword.tml"/> -->      
+        <!-- <page url="test/test.tml"/>       -->
+<tabBar style="height:50;background-color:#87CEEB;" id="tabBar">
+    <tab id="home" title="首页" selected="true" style="height:50;text-align:center;font-size:20;color:#000000;background-image:" >
+        <navigator id="nav1">
+            <page id="tml1" url="index/index.tml" hidesStatusBar="true" style="background-color:#f3f3f3"></page>
+        </navigator>
+    </tab>
+     <tab id="home" title="存款" selected="false" style="height:50;text-align:center;font-size:20;color:#000000;background-image:" >
+        <navigator id="nav1">
+            <page id="tml1" url="CashInBank/CashInBank.tml" hidesStatusBar="false" style="background-color:#f3f3f3"></page>
+        </navigator>
+    </tab> 
+    <tab id="home" title="理财" selected="false" style="height:50;text-align:center;font-size:20;color:#000000;background-image:" >
+        <navigator id="nav1">
+            <page id="tml1" url="productRecommendation/productRecommendation.tml" hidesStatusBar="false" style="background-color:#f3f3f3"></page>
+        </navigator>
+    </tab>
+     <tab id="home" title="我的" selected="false" style="height:50;text-align:center;font-size:20;color:#000000;background-image:" >
+        <navigator id="nav1">
+            <page id="tml1" url="personalCenter/personalCenter.tml" hidesStatusBar="false" style="background-color:#f3f3f3"></page>
+        </navigator>
+    </tab>
+</tabBar>
+                            
+    </navigator>
+
+</frame>

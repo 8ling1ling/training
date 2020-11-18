@@ -1,0 +1,79 @@
+<tml>
+	<head>
+		<style href="registered.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>
+        
+		<script src="registered.js"/>
+	</head>
+	<body>   
+        <div class="container">
+			<div class="header hpanel crosscenter ">
+                <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+                </div>
+                <label value="注册" id="id_title" class="title_white" />
+                <label value=""  class="tit_right" />
+            </div>
+            <scroller class="w100 ave page_distance">
+             <div  class="mgT_25">
+             <label value="欢迎新用户" id="" class="welcome" />
+                </div>
+                <div  class="mgT_20">
+                </div>
+                <!-- <div id="" class="emptybox h_150">
+                    <label value="银行logo" id="" class="" />
+                </div> -->
+                <div id="" class="flexbox">
+                    <label value="姓名:" id="" class="baselabel" />
+                    <input value="{{name}}" id="" class="baseinput w70" tip="请输入您的姓名"/>
+                </div>
+               <div  class="mgT_20">
+                </div>
+                <div id="" class="flexbox">
+                    <label value="手机号：" id="" class="baselabel" />
+                    <input value="{{phone}}" id="" class="baseinput w70" tip="请输入手机号"/>
+                </div>
+               <div  class="mgT_20">
+                </div>
+                <div id="" class="flexbox">
+                    <label value="密码：" id="" class="baselabel" />
+                    <input   value="{{password1}}" id="" class="baseinput w70" tip="密码"/>
+                </div> 
+                 <div  class="mgT_20">
+                </div>
+                 <div id="" class="flexbox">
+                    <label value="确认密码：" id="" class="baselabel" />
+                    <input   value="{{password2}}" id="" class="baseinput w70" tip="密码"/>
+                </div> 
+               <div  class="mgT_20">
+                </div>
+                <div id="" class="flexbox">
+                    <label value="身份证：" id="" class="baselabel" />
+                    <input value="{{identity}}" id="" class="baseinput w70" tip="请输入身份证"/>
+                </div>
+                 <div  class="mgT_20">
+                </div>
+
+                <div id="" class="flexbox00">
+                    <label value="银行卡号" id="" class="baselabel" />
+                    <input value="{{cardId}}" id="" class="baseinput w70" tip="请输入银行卡号"/>
+                </div>
+
+                 <div id="" class="flexbox">
+                    <label value="验证码：" id="" class="baselabel" />
+                    <input value="{{code}}" id="" class="baseinput w40" tip="请输入验证码"/>
+                      <CountdownButton btnTitleBegin = "发送验证码" btnTitleEnd = "重新发送" type = "countdown3" id="CountdownButton3"/>
+                </div>
+
+                  
+                <!-- 真正<button value="注册" id="" class="login_button w100 mgT_80" onclick="testRequest()" /> -->
+                <button value="注册" id="" class="login_button w100 mgT_80" onclick="testRequest()" />
+                
+            </scroller>
+            
+		</div>
+	</body>
+</tml>

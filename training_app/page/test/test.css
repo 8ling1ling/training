@@ -1,0 +1,49 @@
+.labal_title{
+    color: #afa7a7;
+    margin: 15 0;
+}
+.flex_box{
+    flex-direction: row;
+    padding: 8   ;
+    background-color: #eeeeee;
+    border-radius: 10;
+    margin: 0 0 20 0;
+}
+.flex_colum{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90;
+}
+.rate_label{
+    color: red;
+    text-align: center;
+    font-size: 24;
+}
+.rate_text_label{
+    text-align: center;
+    font-size: 14;
+    color: #a19c9c;
+}
+.product_name{
+    font-style: bold;
+}
+.product_brief{
+    font-size: 13;
+    color: #a19c9c;
+}
+.more_btn{
+    text-align: right;
+    font-size: 15;
+    color: #a19c9c;
+}
+.border_right{
+    border-right: 1 solid #000000;
+}
+.regularList{
+    width: 100%;
+    height: 260;
+}
+.currentList{
+    width: 100%;
+    height: 130;
+}

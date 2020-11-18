@@ -1,0 +1,45 @@
+<tml onload="init()">
+	<head>
+		<style href="buyDetails.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>        
+		<script src="buyDetails.js"/>
+	</head>
+	<body>
+        <div class="container">
+        <div class="header3 hpanel crosscenter ">
+         <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+                </div>
+                      <label value="           持有详情"  class="tit_right4" />
+               </div>
+                  <div class="rowline"></div>
+             <scroller class="w100 ave page_distance">
+                     <div id="" class="flexbox12">
+                    <label value="本息合计" class="baselabel21" />
+                    <label value="￥{{BuyNum}}.00" class="baselabel21"/>
+                    </div> 
+
+                      <div id="" class="flexbox1">
+                    <label value="存入日期" class="baselabel2" />
+                    <label value="{{date1}}" class="baselabel23 w70"/>
+                    </div> 
+
+                      <div id="" class="flexbox1">
+                    <label value="期限" class="baselabel2" />
+                    <label value="{{retCode}}个月" class="baselabel23 w70"/>
+                    </div> 
+
+                      <div id="" class="flexbox1">
+                    <label value="利率" class="baselabel2" />
+                    <label value="{{date2}}%" class="baselabel23 w70"/>
+                    </div> 
+                    <label value="产品点击即可支取" class="baselabel24"/>
+                    <label value="注：提前支取，只允许全部支取" class="baselabel24"/>
+                 <button onclick ="inputPassword()"  value="支取" class="button11"/>
+            </scroller>
+		</div>
+	</body>
+</tml>

@@ -1,0 +1,81 @@
+<tml onload="init()">
+	<head>
+		<style href="productRecommendation.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>
+		<script src="productRecommendation.js"/>
+	</head>
+	<body>
+        <div class="container">
+        <div class="header hpanel crosscenter ">
+         <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+         </div>
+         </div>
+            
+            <scroller class="w100 ave page_distance">
+            <div  class="mgT_10">
+                <div  class="flexbox_head1 h_75">
+                     <label value="智能推荐"   class="fs_20" />
+                     <label value="   产品推荐"   class="fs_18" />
+                </div>
+                 
+                       <list class="mylist" id="listview" dataSource="{{dataList}}" refreshBottom="false">
+                              <template>
+                          <div  class="emptybox h_1501" onclick="productDetails({{item.id}})">
+                          <label  class="fs_182"  value="{{item.product_name}}"></label>
+                          <label  class="fs_183"  value="                产品总额    :{{item.product_all}}"></label>
+                          <label  class="fs_183"  value="每人购买最高数量:{{item.max_buy}}"></label>
+                          </div>
+                              </template>
+                       </list>
+               </div>
+
+
+
+
+
+
+
+
+<!-- 
+            <div  class="mgT_10">
+                <div  class="flexbox_head1 h_30">
+                     <label value="   产品推荐"   class="fs_18" />
+                </div>
+                 <div  class="emptybox1 h_1501 " >
+                 <div class="boder2 h_751 " >
+                         <label  class="fs_18" >中高风险</label>
+                 </div>
+                  <div class="boder1" onclick="productDetails1()"> 
+                       <label  class="fs_181" value="{{productintro1}}"></label>
+                    </div> 
+               </div>
+            </div> -->
+
+
+
+                 <!-- <div  class="mgT_10">
+                <div  class="flexbox_head1 h_30">
+                     <label value="   产品推荐"   class="fs_18" />
+                </div>
+                 <div  class="emptybox1 h_1501"  onclick="productDetails2()">
+                 <div class="boder2 h_751">
+                         <label  class="fs_18" >中低风险</label>
+                 </div>
+                  <div class="boder1" > 
+                       <label  class="fs_181" value="{{productintro2}}"></label>
+                    </div> 
+               </div>
+            </div>
+ -->
+
+
+
+            </scroller>
+            
+		</div>
+	</body>
+</tml>

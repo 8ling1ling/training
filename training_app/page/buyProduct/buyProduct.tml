@@ -1,0 +1,59 @@
+<tml onload="init()">
+	<head>
+		<style href="buyProduct.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>        
+		<script src="buyProduct.js"/>
+	</head>
+	<body>
+        <div class="container">
+        <div class="header3 hpanel crosscenter ">
+         <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+                </div>
+                      <label value="           定期购买"  class="tit_right4" />
+               </div>
+                  <div class="rowline"></div>
+             <scroller class="w100 ave page_distance">
+               <div id="" class="flexbox">
+                    <label value="产品类型" class="baselabel2" />
+                    <input value="定期整存整取产品" class="baselabel w70"/>
+                </div> 
+
+                 <div class="flexbox1">
+                    <!-- <label value="定存期限" class="baselabel" /> -->
+                 <label value="定存期限" class="baselabel2" />
+                <select id="select" flat="false" tip="{{tip}}" class="flexbox11" dataSource = "{{options}}" btnCancel="取消" btnOk="选择" >
+	                  <option  value="{{item.option_value}}" caption="{{item.option_caption}}" /> 
+                   </select>
+                </div>
+
+                    <div class="flexbox1">
+                    <label value="到期日" class="baselabel2" />
+                    <input value="{{expire}}" class="baselabel w70"/>
+                   </div> 
+
+                     <div id="" class="flexbox21">
+                    <label value="购买金额" class="baselabel22" />
+                    <input class="flexbox22" tip="请输入金额" value="{{money}}" type="idCardxChar" cashUnit="¥   "/>
+                </div> 
+
+                <div class="flexbox1">
+                    <label value="付款账号" class="baselabel2" />
+                     <div id="" class="flexbox11">
+                     <label value="电子账户({{data1}})" class="baselabel21" /> 
+                     <label value="余额￥{{data}},00" class="baselabel21" />
+                      </div>
+                   </div>
+                      <div id="" class="flexbox1">
+                    <label value="续存方式" class="baselabel2" />
+                    <label value="本息转存" class="baselabel23 w70"/>
+                </div> 
+
+                 <button onclick ="buySucceeded()"  value="下一步" class="button11"/>
+            </scroller>
+		</div>
+	</body>
+</tml>

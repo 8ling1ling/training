@@ -1,0 +1,57 @@
+<tml onload="init()">
+	<head>
+		<style href="moneyRecord.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>        
+		<script src="moneyRecord.js"/>
+	</head>
+	<body>
+        <div class="container">
+        <div class="header3 hpanel crosscenter ">
+         <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+                </div>
+                      <label value="           支取记录"  class="tit_right4" />
+               </div>
+
+               <!--  -->
+
+                <list class="mylist" id="listview" dataSource="{{incomecode}}" refreshBottom="false">
+                          <template>
+
+                    <div id="" class="flexbox12">
+                    <div id="" class="flexbox1">
+                    <label value="产品名称" class="baselabel2" />
+                    <label value="{{item.product_name}}" class="baselabel23 w70"/>
+                    </div> 
+                    <div class="rowline"></div>
+                     <div id="" class="flexbox1">
+                    <label value="产品利率" class="baselabel2" />
+                    <label value="{{item.product_rate}}" class="baselabel23 w70"/>
+                    </div> 
+                    <div class="rowline"></div>
+                    <div id="" class="flexbox1">
+                    <label value="支出金额" class="baselabel2" />
+                    <label value="{{item.buy_num}}" class="baselabel23 w70"/>
+                    </div> 
+                    </div> 
+                         <!-- <div class="flexbox_head6 h_200"  onclick="buyDetails({{item.id}})">
+                         <label value="{{item.name}}"class="logo_label1" />
+                          <label value="{{item.buyNum}}.00(元)" id="" class="logo_label1" />
+                         <label value="持有金额" id="" class="logo_label3" />
+                         </div>  -->
+                          </template>
+                       </list>
+
+               <!--  -->
+                  <div class="rowline"></div>
+             <scroller class="w100 ave page_distance">
+
+                   
+                 <button onclick ="testRequest()"  value="确定" class="button11"/>
+            </scroller>
+		</div>
+	</body>
+</tml>

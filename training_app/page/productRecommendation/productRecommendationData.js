@@ -1,0 +1,21 @@
+var DATA = {
+    list: [],
+    dataList: [],
+    nextPage: "",
+    pageNo: 1,
+    pageSize: 8,
+    status: "",
+    name:"",
+    phone:"",
+    password1:"",
+    password2:"",
+    identity:"",
+    code:"",
+    productintro:"",
+    productintro1:"",
+    productintro2:"",
+    pubData2:"$pub.Data",
+    pubid:"$pub.id",
+    id:"",
+    time:""
+}

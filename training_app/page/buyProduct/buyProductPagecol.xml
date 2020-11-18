@@ -1,0 +1,10 @@
+<paths>
+    <forward>
+        <path ty:if="DATA.nextPage === 'buySucceeded'" url="page/buySucceeded/buySucceeded.tml" class="push" />
+        <path ty:if="DATA.nextPage === 'gesture'" url="page/gesture/gesture.tml" class="push" />
+        <path ty:if="DATA.nextPage === 'setGesture'" url="page/setGesture/setGesture.tml" class="push" />
+    </forward>
+    <backward>
+        <path ty:if="true" class="pop"/>
+    </backward>
+</paths>

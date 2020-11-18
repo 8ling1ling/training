@@ -1,0 +1,34 @@
+{
+    "common": {
+      "width": "137",
+      "height": "38",
+      "countdownBtn-type": "noBackground",
+      "font-size": "20",
+      "font-color": "#1e90fb",
+      "countdown": "60"
+    },
+    "type": {
+      "countdown1": {
+        "width": "159",
+        "height": "38",
+        "countdownBtn-type": "progress"
+      },
+      "countdown2": {
+        "height": "30",
+        "width": "60",
+        "font-size": "15",
+        "border-radius": "9",
+        "font-color": "#ffffff",
+        "background-color": "#1e90fb",
+        "countdownBtn-type": "background"
+      },
+      "countdown3": {
+        "height": "60",
+        "width": "90",
+        "font-size": "15",
+        "font-color": "#1e90fb",
+        "countdownBtn-type": "unline"
+      }
+    }
+  }
+  

@@ -1,0 +1,12 @@
+<paths>
+    <forward>
+        <!-- <path ty:if="DATA.nextPage === 'detail'" url="page/theme/themeDetail/themeDetail.tml" class="push" /> -->
+        <path ty:if="DATA.nextPage === 'login2'" url="page/login2/login2.tml" class="push" /> 
+        <path ty:if="DATA.nextPage === 'login'"  url="page/login/login.tml" class="push" /> 
+        <path ty:if="DATA.nextPage === 'index'" url="page/index/index.tml" class="push" /> 
+        <path ty:if="DATA.nextPage === 'SMSverification2'" url="page/SMSverification2/SMSverification2.tml" class="push" />
+    </forward>
+    <backward>
+        <path ty:if="true" class="pop"/>
+    </backward>
+</paths>

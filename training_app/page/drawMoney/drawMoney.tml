@@ -1,0 +1,41 @@
+<tml onload="init()">
+	<head>
+		<style href="drawMoney.css"/>
+		<style href="../../css/public.css"/>
+        <script src="../../commonJs/config.js"/>
+		<script src="../../commonJs/tools.js"/>
+		<script src="../../commonJs/request.js"/>        
+		<script src="drawMoney.js"/>
+	</head>
+	<body>
+        <div class="container">
+        <div class="header3 hpanel crosscenter ">
+         <div id="back" class="backBox hpanel crosscenter"  onclick="backward()" >
+                    <img class="back" src="../../image/public/back.png" />
+                </div>
+                      <label value="           支取成功"  class="tit_right4" />
+               </div>
+                  <div class="rowline"></div>
+             <scroller class="w100 ave page_distance">
+                     <div id="" class="flexbox12">
+                    <label value="存款支取成功" class="baselabel21" />
+                    <div id="" class="flexbox1">
+                    <label value="交易时间" class="baselabel2" />
+                    <label value="{{transaction}}" class="baselabel23 w70"/>
+                    </div> 
+                    <div class="rowline"></div>
+                     <div id="" class="flexbox1">
+                    <label value="到账账户" class="baselabel2" />
+                    <label value="{{id}}" class="baselabel23 w70"/>
+                    </div> 
+                    <div class="rowline"></div>
+                    <div id="" class="flexbox1">
+                    <label value="到账金额" class="baselabel2" />
+                    <label value="{{money}}" class="baselabel23 w70"/>
+                    </div> 
+                    </div> 
+                 <button onclick ="viewWealth()"  value="完成" class="button11"/>
+            </scroller>
+		</div>
+	</body>
+</tml>

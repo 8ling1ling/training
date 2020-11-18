@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.sunline.tiny.demo.mapper.ProductIncomeMapper">
+<!--selectById,deleteById,updateById,insert is auto create, <resultMap id="BaseResultMap" is auto create -->
+
+    <select id="buyNum"  resultMap="BaseResultMap">
+
+      select
+       n.product_name,e.buy_num,e.state
+       from
+        product_income e
+        left join
+         product_information n
+         on
+          e.product_id=n.id
+        where
+         e.uid=#{id}
+         and
+         e.state=0
+
+    </select>
+    <update id="changeBuyNum">
+        update
+         product_income
+          set
+           buy_num=0
+            where
+             uid =#{id}
+    </update>
+
+    <insert id="insertBuyRecord">
+        insert into
+        product_income
+         (uid,product_id,buy_num,income_money,time1)
+         values
+         (#{id},#{pubid},#{num},#{num},#{date})
+    </insert>
+    <select id="selectIncomeById" resultMap="BaseResultMap">
+       select
+       *
+       from
+        product_income
+        where
+         uid=#{id}
+    </select>
+    <select id="selectIncomeByProId"  resultMap="BaseResultMap">
+         select
+       *
+       from
+        product_income
+        where
+         id=#{id}
+    </select>
+    <select id="selectIncomeNumById" resultType="string">
+        select
+       buy_num
+       from
+        product_income
+        where
+         uid=#{id}
+    </select>
+    <delete id="deleteByUid">
+        delete from
+        product_income
+        where
+         uid = #{id}
+    </delete>
+    <update id="changeState">
+        update  product_income set  state=1 where id=#{a}
+    </update>
+    <select id="selectNumByIncomeId" resultType="String">
+        select buy_num from product_income where id =#{a}
+    </select>
+
+
+</mapper>

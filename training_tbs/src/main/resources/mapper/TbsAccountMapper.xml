@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.sunline.tiny.demo.mapper.TbsAccountMapper">
+<!--selectById,deleteById,updateById,insert is auto create, <resultMap id="BaseResultMap" is auto create -->
+
+    <update id="updateBalance">
+        update
+        tbs_account
+        set
+         account_balance=#{add}
+          where
+           u_id=#{uid}
+    </update>
+
+    <select id="selectBalance" resultMap="BaseResultMap">
+        select * from tbs_account where u_id=#{id}
+    </select>
+</mapper>
